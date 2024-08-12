@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Input Types</title>
     </head>
 
     <body>
@@ -34,6 +35,27 @@
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" placeholder="Enter any date:" min="00-00-0000" max="08-11-2024" required>
             <button type="submit">Submit</button>
+        </form>
+
+    <!--Question 1 Task 4-->
+        <h4>Range Input Form</h4>
+        <form action="/submit" method="post">
+            <label for="range">Select Quantity (1 to 100):</label>
+            <div class="range-label">
+            <input 
+                type="range" 
+                id="range" 
+                name="range" 
+                min="1" 
+                max="100" 
+                step="1" 
+                value="50" 
+                oninput="updateRangeValue(this.value)" 
+                required 
+            >
+            <p class="range-value" id="rangeValue">50</p>
+            </div>
+        <button type="submit">Submit</button>
         </form>
     </body>
 </html>
