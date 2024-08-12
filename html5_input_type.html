@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+    <!--Question 1 Task 1-->
+        <h1>Email Input Form</h1>
+        <form action="/submit" method="post">
+            <label for="email">Email Address:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required 
+            >
+            <button type="submit">Submit</button>
+        </form>
+
+    <!--Question 1 Task 2-->    
+        <h2>Number Input Form</h2>
+        <form action="/submit" method="post">
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Enter a positive number" min="0" required>
+            <button type="submit">Submit</button>
+        </form>
+
+    <!--Question 1 Task 3-->   
+        <h3>Date Form Input</h3>
+        <form action="/submit" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" placeholder="Enter any date:" min="00-00-0000" max="08-11-2024" required>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
